@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2efd9"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="本月预算"
+            android:textColor="@color/colorOrange2"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/cur_month_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="0"
+            android:textColor="@color/colorOrange1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="元"
+            android:textColor="@color/colorOrange2"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cur_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:text="总计已支出"
+            android:textColor="@color/colorOrange1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cur_pay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="0"
+            android:textColor="@color/colorOrange2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="元"
+            android:textColor="@color/colorOrange1"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cur_month_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:text="本月已支出"
+            android:textSize="20sp"
+            android:textColor="@color/colorOrange1"
+            />
+
+        <TextView
+            android:id="@+id/cur_month_pay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textColor="@color/colorOrange2"
+            android:text="0"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="元"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorOrange1"
+            android:layout_marginStart="20sp" />
+    </LinearLayout>
+</LinearLayout>

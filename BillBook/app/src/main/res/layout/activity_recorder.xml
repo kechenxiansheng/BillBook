@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+相对于父布局：
+layout_alignParentStart:（true）与左边缘对齐
+layout_alignParentLeft
+layout_alignParentTop：顶端对齐
+layout_alignParentEnd
+layout_alignParentRight：与右边缘对齐
+
+相对于兄弟组件：
+layout_below：指定的组件下边（不一定是正下方）
+layout_toStartOf
+layout_toLeftOf：指定组件的左边
+layout_toRightOf：指定组件的右边
+layout_alignTop：指定组件的上边缘对齐
+
+
+editText 使用android:maxLines  表示行数达到3行就不在拉伸，而是自行向上滚动
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2efd9"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_recorder"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_menu_back" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:enabled="false"
+            android:text="记录"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_view_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_recorder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="24dp"
+        android:clickable="false"
+        android:text="类型"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_type"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/spinner_type"
+        android:layout_toLeftOf="@+id/spinner_type"
+        android:text="时间"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/text_view_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_cur_time"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@+id/spinner_type"
+        android:layout_toLeftOf="@+id/spinner_type"
+        android:text="费用"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/text_view_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_money"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@+id/spinner_type"
+        android:layout_toLeftOf="@+id/spinner_type"
+        android:text="备注"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/text_view_type"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/text_view_type"
+        android:background="@color/colorOrange2"
+        android:entries="@array/select_item"
+        android:gravity="center"
+
+        android:spinnerMode="dialog"
+        android:touchscreenBlocksFocus="false" />
+
+    <EditText
+        android:id="@+id/text_view_cur_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/spinner_type"
+        android:layout_alignLeft="@+id/spinner_type"
+        android:layout_alignTop="@+id/text_view_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center"
+        android:hint="2020-02-20"
+        android:textColor="@color/colorOrange1"
+        android:layout_marginEnd="50dp" />
+
+    <EditText
+        android:id="@+id/edit_text_money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/text_view_cur_time"
+        android:layout_alignLeft="@+id/text_view_cur_time"
+        android:layout_alignTop="@+id/text_view_money"
+        android:layout_marginRight="50dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center"
+        android:hint="1"
+        android:textColor="@color/colorOrange1"
+        android:layout_marginEnd="50dp" />
+
+    <EditText
+        android:id="@+id/edit_text_note"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:maxLines="3"
+        android:layout_alignStart="@+id/edit_text_money"
+        android:layout_alignLeft="@+id/edit_text_money"
+        android:layout_alignTop="@+id/text_view_note"
+        android:layout_marginRight="50dp"
+        android:width="2dip"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:hint="衣物，早餐，旅游"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_marginEnd="50dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_note"
+        android:layout_alignStart="@+id/text_view_type"
+        android:layout_alignLeft="@+id/text_view_type"
+
+        android:layout_marginTop="36dp"
+        android:background="@color/colorOrange1"
+        android:text="保存"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_save"
+        android:layout_alignEnd="@+id/edit_text_note"
+        android:layout_alignRight="@+id/edit_text_note"
+
+        android:background="@color/colorOrange1"
+        android:text="取消"
+        android:textSize="16sp"/>
+
+
+
+</RelativeLayout>

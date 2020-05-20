@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2efd9"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+      <LinearLayout
+          android:id="@+id/jyb_button_jl_1"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="5dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimaryDark"
+          android:descendantFocusability="beforeDescendants"
+          android:orientation="horizontal">
+
+          <ImageButton
+              android:id="@+id/jyb_button_jl_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginStart="5dp"
+              android:layout_gravity="center"
+              android:background="@color/colorOrange2"
+              android:clickable="false"
+              android:src="@drawable/ic_menu_bills" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="10dp"
+              android:text="记录"
+              android:textColor="@color/colorOrange2"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/jyb_button_zd_1"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="5dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimaryDark"
+          android:descendantFocusability="beforeDescendants"
+          android:orientation="horizontal">
+
+          <ImageButton
+              android:id="@+id/jyb_button_zd_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginStart="5dp"
+              android:layout_gravity="center"
+              android:background="@color/colorOrange2"
+              android:clickable="false"
+              android:src="@drawable/ic_menu_star"
+               />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="10dp"
+              android:text="账单"
+              android:textColor="@color/colorOrange2"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/jyb_button_ys_1"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="5dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimaryDark"
+          android:descendantFocusability="beforeDescendants"
+          android:orientation="horizontal">
+
+          <ImageButton
+              android:id="@+id/jyb_button_ys_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginStart="5dp"
+              android:layout_gravity="center"
+              android:background="@color/colorOrange2"
+              android:clickable="false"
+              android:src="@drawable/ic_menu_edit" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="10dp"
+              android:text="预算"
+              android:textColor="@color/colorOrange2"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+      </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

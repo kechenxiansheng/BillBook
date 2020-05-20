@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BillBook</string>
+
+    <string-array name="select_item">
+        <item>衣物</item>
+        <item>餐食</item>
+        <item>房租</item>
+        <item>日常出行</item>
+        <item>旅游</item>
+        <item>话费</item>
+        <item>生活用费</item>
+        <item>娱乐</item>
+        <item>电子设备</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="set_description">
+        <item>账单app使用说明：</item>
+        <item>1、记一笔页面</item>
+        <item>①：点击“记一笔”记录每一笔账单</item>
+        <item>②：点击“账单”查看所有记录的消费记录</item>
+        <item>②-①：长按当前记录可以进行删除操作（有是否删除提示）</item>
+        <item>③：点击“预算”设置本月的预算</item>
+        <item>2、账户页面</item>
+        <item>①：显示本月的预算、总计消费、本月消费三种信息</item>
+        <item>3、详情</item>
+        <item>①：显示本月各类型分别花费情况</item>
+    </string-array>
+</resources>

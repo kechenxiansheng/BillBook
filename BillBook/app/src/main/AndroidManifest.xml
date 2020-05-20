@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+allowBackup  Android 2.2中引入的一个系统备份的功能，默认为true，打开。容易提示安全风险，最好设置为false
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cm.bill">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 获取指纹库权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:fullBackupContent="true"
+        android:name="com.cm.bill.application.MyApplication"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cm.bill.activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.cm.bill.activity.BillsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.cm.bill.activity.BudgetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.cm.bill.activity.RecordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+    </application>
+
+</manifest>

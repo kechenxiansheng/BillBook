@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2efd9">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_budget"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/image_view_back_budget"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_menu_back" />
+
+        <TextView
+            android:id="@+id/textView_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:background="@color/colorPrimaryDark"
+            android:enabled="false"
+            android:text="本月预算"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_budget"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月预算"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/edit_text_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffffff"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:hint="0000"
+            android:textColor="@color/colorOrange2"
+            android:dividerHeight="1dip"
+             />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:layout_weight="0.2"
+
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_sure"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorOrange2"
+            android:text="确定"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
