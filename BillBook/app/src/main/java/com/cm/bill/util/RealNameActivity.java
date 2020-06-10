@@ -88,7 +88,7 @@ public class RealNameActivity extends Activity{
 				map.put("uid",uid);
 				Log.d(tag,"real_name_activity：start post 1");
 				checkResult();
-				postToServer("http://sdk.cqzq6.com/sdk-server/user/verifyRealName",map);
+				postToServer("http://xxxx/verifyRealName",map);
 
 			}
 		});
